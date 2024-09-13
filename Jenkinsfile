@@ -3,17 +3,25 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')   // DockerHub credentials ID
-        SSH_CREDENTIALS = 'a4c07b82-b27b-497b-ba6b-d15e38187ddf'                      // SSH credentials ID
-        DOCKER_IMAGE = 'codewithfredrick/nextroot-website'         // Docker image name
-        PRODUCTION_SERVER = '185.202.223.221'           // Production server IP
-        PRODUCTION_USER = 'root'           // SSH user on production server
+        SSH_CREDENTIALS = 'a4c07b82-b27b-497b-ba6b-d15e38187ddf' // SSH credentials ID
+        DOCKER_IMAGE = 'codewithfredrick/nextroot-website'        // Docker image name
+        PRODUCTION_SERVER = '185.202.223.221'                    // Production server IP
+        PRODUCTION_USER = 'root'                                 // SSH user on production server
     }
     
     stages {
         stage('Clone Repository') {
             steps {
-                // Checkout the repository code
-                git 'https://github.com/fredochieng/nextroot-website.git'
+                script {
+                    // Checkout the repository from a specific branch (e.g., 'main')
+                    checkout([$class: 'GitSCM', 
+                        branches: [[name: '*/main']],  // Replace 'main' with your branch name
+                        userRemoteConfigs: [[
+                            url: 'https://github.com/fredochieng/nextroot-website.git',
+                            credentialsId: 'github-creds' // Ensure this matches your GitHub credentials ID
+                        ]]
+                    ])
+                }
             }
         }
         
