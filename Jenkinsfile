@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    sh "docker build -t ${DOCKER_IMAGE}:latest ."
+                    sh "sudo docker build -t ${DOCKER_IMAGE}:latest ."
                 }
             }
         }
@@ -47,7 +47,7 @@ pipeline {
                 script {
                     // Log in to DockerHub and push the image
                     docker.withRegistry('https://index.docker.io/v1/', DOCKERHUB_CREDENTIALS) {
-                        sh "docker push ${DOCKER_IMAGE}:latest"
+                        sh "sudo docker push ${DOCKER_IMAGE}:latest"
                     }
                 }
             }
