@@ -7,6 +7,7 @@ pipeline {
         DOCKER_IMAGE = 'codewithfredrick/nextroot-website'        // Docker image name
         PRODUCTION_SERVER = '185.202.223.221'                    // Production server IP
         PRODUCTION_USER = 'root'                                 // SSH user on production server
+        GITHUB_CREDENTIALS = 'github-creds'                      // GitHub credentials ID
     }
     
     stages {
@@ -18,14 +19,14 @@ pipeline {
                         branches: [[name: '*/main']],  // Replace 'main' with your branch name
                         userRemoteConfigs: [[
                             url: 'https://github.com/fredochieng/nextroot-website.git',
-                            credentialsId: 'github-creds' // Ensure this matches your GitHub credentials ID
+                            credentialsId: GITHUB_CREDENTIALS // Ensure this matches your GitHub credentials ID
                         ]]
                     ])
                 }
             }
         }
         
-        stage('Build Vue Nuxt App') {
+        stage('Install Dependencies and Build Vue Nuxt App') {
             steps {
                 // Install dependencies and build the app
                 sh 'npm install'
@@ -36,7 +37,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    // Build the Docker image
+                    // Build the Docker image (no sudo required if Jenkins has Docker group access)
                     sh "sudo docker build -t ${DOCKER_IMAGE}:latest ."
                 }
             }
