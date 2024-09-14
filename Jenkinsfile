@@ -90,15 +90,15 @@
 
 pipeline {
     agent any
-    
+
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')   // DockerHub credentials ID
-        SSH_CREDENTIALS = 'a4c07b82-b27b-497b-ba6b-d15e38187ddf'                           // SSH credentials ID
+        SSH_CREDENTIALS = 'a4c07b82-b27b-497b-ba6b-d15e38187ddf' // SSH credentials ID
         DOCKER_IMAGE = 'codewithfredrick/nextroot-website'        // Docker image name
         PRODUCTION_SERVER = '185.202.223.221'                    // Production server IP
         PRODUCTION_USER = 'root'                                 // SSH user on production server
     }
-    
+
     stages {
         stage('Clone Repository') {
             steps {
@@ -171,3 +171,4 @@ pipeline {
         }
     }
 }
+
