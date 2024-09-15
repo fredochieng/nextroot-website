@@ -58,14 +58,14 @@ pipeline {
                 script {
                     // SSH into the production server and deploy the Docker container
                     sshagent([SSH_CREDENTIALS]) {
-                        sh """
-                        ssh -o StrictHostKeyChecking=no root@185.202.223.221 << 'EOF'
-                        sudo docker pull codewithfredrick/nextroot-website:latest
-                        sudo docker stop nextroot-website || true
-                        sudo docker rm nextroot-website || true
-                        sudo docker run -d -p 3000:3000 --name nextroot-website codewithfredrick/nextroot-website:latest
-                        EOF
-                        """
+                        sh '''
+                            ssh -o StrictHostKeyChecking=no root@185.202.223.221 << 'EOF'
+                            sudo docker pull codewithfredrick/nextroot-website:latest
+                            sudo docker stop nextroot-website || true
+                            sudo docker rm nextroot-website || true
+                            sudo docker run -d -p 3000:3000 --name nextroot-website codewithfredrick/nextroot-website:latest
+        EOF
+                        '''
                     }
                 }
             }
