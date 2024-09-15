@@ -59,7 +59,7 @@ pipeline {
                     // SSH into the production server and deploy the Docker container
                     sshagent([SSH_CREDENTIALS]) {
                         sh '''
-                            ssh -o StrictHostKeyChecking=no root@185.202.223.221 << 'EOF'
+                            ssh -o StrictHostKeyChecking=no root@185.202.223.221 << EOF
                             sudo docker pull codewithfredrick/nextroot-website:latest
                             sudo docker stop nextroot-website || true
                             sudo docker rm nextroot-website || true
