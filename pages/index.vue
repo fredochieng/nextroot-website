@@ -5,10 +5,10 @@ const { $ScrollSmoother, $ScrollTrigger } = useNuxtApp();
 gsap.registerPlugin($ScrollTrigger, $ScrollSmoother);
 
 import HeaderThree from "~/layouts/headers/HeaderThree.vue";
-import FooterFour from "~/layouts/footers/FooterFour.vue";
+import FooterOne from "~/layouts/footers/FooterOne.vue";
 
 // useHead
-useHead({ title: "Softec - Data analytics Vue Nuxt Template" });
+useHead({ title: "Nextroot Solutions - Growing Ideas, Building Futures" });
 
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap");
@@ -44,9 +44,10 @@ onMounted(() => {
         <!-- <CommonCardArea /> -->
         <!-- <CommonSalesArea /> -->
         <!-- <TestimonialAreaHomeThree /> -->
-        <IntegrationAreaHomeThree />
+        <!-- <IntegrationAreaHomeThree /> -->
+        <BusinessBoxHomeFive />
       </main>
-      <FooterFour />
+      <FooterOne />
     </div>
   </div>
 </template>

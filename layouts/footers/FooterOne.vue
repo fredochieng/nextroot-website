@@ -133,8 +133,8 @@ watch(isView, (newValue) => {
                     <img src="~/assets/img/logo/logo-white.png" alt="image-here">
                   </NuxtLink>
                   <div class="tp-footer__text">
-                    <p>Our highly skilled development teams <br />
-                      specialized in data analysis.</p>
+                    <p>We bring your ideas to life by transforming your vision into innovative, functional, and user-friendly software solutions <br />
+                      </p>
                   </div>
                   <div class="tp-footer__social">
                     <NuxtLink target="_blank" to="https://www.facebook.com"><i class="fab fa-facebook-f"></i></NuxtLink>

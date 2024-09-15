@@ -6,12 +6,12 @@ const { $ScrollSmoother,$ScrollTrigger } = useNuxtApp();
 gsap.registerPlugin($ScrollTrigger, $ScrollSmoother);
 
 import HeaderSix from "~/layouts/headers/HeaderSix.vue";
-import FooterFour from "~/layouts/footers/FooterFour.vue";
+import FooterOne from "~/layouts/footers/FooterOne.vue";
 
 import bg_img from "~/assets/img/breadcrumb/breadcrumb-2.jpg";
  
 // useHead
-useHead({title: "About Nextroot Solutions- "});
+useHead({title: "About Nextroot Solutions - Growing Ideas, Building Futures"});
 
 
 if (typeof window !== "undefined") {
@@ -45,9 +45,10 @@ onMounted(() => {
           <!-- <TeamAreaHomeFour :style_2="true" /> -->
           <!-- <TestimonialJourneyArea /> -->
           <!-- <JobArea /> -->
-          <CtaAbout />
+          <!-- <CtaAbout /> -->
+           <BusinessBoxHomeFive />
         </main>
-        <FooterFour :style_contact="true" :style_team="true" :bg_style="true" />
+        <FooterOne :style_contact="true" :style_team="true" :bg_style="true" />
       </div>
     </div>
   </div>

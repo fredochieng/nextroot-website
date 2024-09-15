@@ -10,7 +10,7 @@ import FooterFive from "~/layouts/footers/FooterFive.vue";
 import bg_img from "~/assets/img/breadcrumb/breadcrumb-2.jpg";
 
 // useHead
-useHead({title: "Service Softec - Data analytics Vue Nuxt Template"});
+useHead({title: "Service Softec - Growing Ideas, Building Futures"});
 
 onMounted(() => {
   $ScrollSmoother.create({

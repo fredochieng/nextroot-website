@@ -10,7 +10,7 @@ import FooterFive from "~/layouts/footers/FooterFive.vue";
 
 
 // useHead
-useHead({title: "Integrations Softec - Data analytics Vue Nuxt Template"});
+useHead({title: "Integrations Softec - Growing Ideas, Building Futures"});
 
 
 onMounted(() => {

@@ -50,8 +50,6 @@ const props = defineProps({
 
 </script>
 
-
-
 <template>
   <!-- tp-integration-area-start -->
   <div class="tp-integration-area pb-110 tp-integration-mlr">

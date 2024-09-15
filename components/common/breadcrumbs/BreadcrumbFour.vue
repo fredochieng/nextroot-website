@@ -35,7 +35,7 @@ onMounted(() => {
             <h3 class="breadcrumb__title tp-char-animation text-black">Our Projects</h3>
             <div class="breadcrumb__text wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".6s">
               <p>We have an experienced team of production and inspection personnel <br> to ensure
-                quality.</p>
+                quality</p>
             </div>
           </div>
         </div>

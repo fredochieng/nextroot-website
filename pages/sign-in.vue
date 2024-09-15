@@ -10,7 +10,7 @@ import HeaderSeven from "~/layouts/headers/HeaderSeven.vue";
 import FooterFive from "~/layouts/footers/FooterFive.vue";
 
 // useHead
-useHead({title: "Register Softec - Data analytics Vue Nuxt Template"});
+useHead({title: "Register Softec - Growing Ideas, Building Futures"});
 
 onMounted(() => {
   $ScrollSmoother.create({

@@ -7,7 +7,7 @@ import HeaderOne from "~/layouts/headers/HeaderOne.vue";
 import FooterOne from "~/layouts/footers/FooterOne.vue";
 // useHead
 useHead({
-  title: "Softec - Data analytics Vue Nuxt Template",
+  title: "Softec - Growing Ideas, Building Futures",
 });
 
 if (typeof window !== "undefined") {

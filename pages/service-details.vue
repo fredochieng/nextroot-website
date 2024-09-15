@@ -7,7 +7,7 @@ import HeaderSix from "~/layouts/headers/HeaderSix.vue";
 import FooterFive from "~/layouts/footers/FooterFive.vue";
  
 // useHead
-useHead({title: "Service Details Softec - Data analytics Vue Nuxt Template"});
+useHead({title: "Service Details Softec - Growing Ideas, Building Futures"});
 
 onMounted(() => {
   $ScrollSmoother.create({

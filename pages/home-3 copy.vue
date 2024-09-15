@@ -8,7 +8,7 @@ import HeaderThree from "~/layouts/headers/HeaderThree.vue";
 import FooterFour from "~/layouts/footers/FooterFour.vue";
 
 // useHead
-useHead({ title: "Softec - Data analytics Vue Nuxt Template" });
+useHead({ title: "Nextroot Solutions - Growing Ideas, Building Futures" });
 
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap");

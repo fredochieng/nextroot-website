@@ -6,13 +6,13 @@ const { $ScrollSmoother,$ScrollTrigger } = useNuxtApp();
 gsap.registerPlugin($ScrollTrigger, $ScrollSmoother);
 
 import HeaderSix from "~/layouts/headers/HeaderSix.vue";
-import FooterFour from "~/layouts/footers/FooterFour.vue";
+import FooterOne from "~/layouts/footers/FooterOne.vue";
 
 import bg_img from "~/assets/img/contact/contact-banner.jpg";
 
 
 // useHead
-useHead({title: "Contact Nextroot Solutions"});
+useHead({title: "Contact Nextroot Solutions - Growing Ideas, Building Futures"});
 
 
 if (typeof window !== "undefined") {
@@ -40,9 +40,10 @@ onMounted(() => {
           <CommonBreadcrumbsBreadcrumb title="Get In" innertitle="Touch" />
           <CommonHeroBanner :bg_img="bg_img" title="Get In" innerTitle="Touch" />
           <FormsContactForm />
-          <CtaAbout />
+          <!-- <CtaAbout /> -->
+           <BusinessBoxHomeFive />
         </main>
-        <FooterFour :style_contact="true" :style_team="true" :bg_style="true" />
+        <FooterOne :style_contact="true" :style_team="true" :bg_style="true" />
       </div>
     </div>
   </div>
