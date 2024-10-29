@@ -22,7 +22,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "Home",
-    link: "/home-2",
+    link: "/",
     active: "",
   },
   // {

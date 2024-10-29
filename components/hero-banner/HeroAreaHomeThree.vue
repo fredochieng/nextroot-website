@@ -51,12 +51,8 @@ onMounted(() => {
             data-wow-duration=".9s"
             data-wow-delay=".7s"
           >
-            <a class="tp-btn-blue-lg tp-btn-hover alt-color-black" href="#">
+            <a class="tp-btn-blue-lg tp-btn-hover alt-color-black" href="/contact">
               <span>Get Started Now</span>
-              <b></b>
-            </a>
-            <a class="tp-btn-border tp-btn-hover alt-color-black" href="#">
-              <span>Request For A Quote</span>
               <b></b>
             </a>
           </div>

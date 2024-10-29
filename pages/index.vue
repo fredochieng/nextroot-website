@@ -40,11 +40,6 @@ onMounted(() => {
         <HeroBannerHeroAreaHomeThree />
         <CounterAreaHomeThree />
         <PaymentTpPaymentAreaHomeTwo />
-        <!-- <RatedAreaHomeThree /> -->
-        <!-- <CommonCardArea /> -->
-        <!-- <CommonSalesArea /> -->
-        <!-- <TestimonialAreaHomeThree /> -->
-        <!-- <IntegrationAreaHomeThree /> -->
         <BusinessBoxHomeFive />
       </main>
       <FooterOne />

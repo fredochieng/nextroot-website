@@ -18,7 +18,7 @@ import bg_img from "~/assets/img/cta/cta-bg.jpg";
               <h3 class="tp-section-title-lg text-white">Try our service now!</h3>
               <p>Eyerything you need to accept cord payments and grow your business <br />
                 anywhere on the planet.</p>
-              <NuxtLink class="tp-btn-green" to="/service-details">Get Started Now</NuxtLink>
+              <NuxtLink class="tp-btn-green" to="/contact">Get Started Now</NuxtLink>
             </div>
           </div>
         </div>

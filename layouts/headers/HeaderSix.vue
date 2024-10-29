@@ -46,7 +46,7 @@ const toggleMenu = () => {
 
               <NuxtLink to="/" v-if="style_2  === true"><img src="~/assets/img/logo/logo-black.png" alt="image-here"></NuxtLink>
 
-              <NuxtLink v-if="style_2  === false" class="white-logo" to="/"><img src="~/assets/img/logo/logo-white.png" alt="image-here"></NuxtLink>
+              <NuxtLink v-if="style_2  === false" class="white-logo" to="/"><img src="~/assets/img/logo/logo-black.png" alt="image-here"></NuxtLink>
               <NuxtLink v-if="style_2  === false" class="black-logo" to="/"><img src="~/assets/img/logo/logo-black.png" alt="image-here"></NuxtLink>
             </div>
           </div>
