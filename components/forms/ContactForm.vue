@@ -40,8 +40,8 @@ const contact_data = {
     {
       id: 3,
       icon: icon_3,
-      title: "35Park Avenue, Uk",
-      link: "https://www.google.com.bd/maps/@23.7806365,90.4193257,12z",
+      title: "2nd Floor, 39 Ludgate Hill, London, EC4M 7JN",
+      link: "https://maps.app.goo.gl/QxZG9yKZYoJHiUXZ8",
     },
   ],
 

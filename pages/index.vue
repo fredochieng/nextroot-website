@@ -38,7 +38,7 @@ onMounted(() => {
     <div id="smooth-content">
       <main class="fix">
         <HeroBannerHeroAreaHomeThree />
-        <CounterAreaHomeThree />
+        <!-- <CounterAreaHomeThree /> -->
         <PaymentTpPaymentAreaHomeTwo />
         <BusinessBoxHomeFive />
       </main>

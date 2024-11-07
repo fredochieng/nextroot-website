@@ -1,7 +1,7 @@
 
 
 <script setup>
-import CountUp from 'vue-countup-v3'
+import { CountUp } from 'vue-countup-v3';
 
 import counter_shape_1 from "~/assets/img/counter/counter-shape-2.png";
 import counter_shape_2 from "~/assets/img/counter/counter-shape-1.png";
@@ -11,9 +11,9 @@ const counter_info = [
   { id: 1, counter: 200, counter_icon: "+", title: "Team Clients", },
   { id: 2, counter: 120, counter_icon: "+", title: "Completed Projects", },
   { id: 3, counter: 4, counter_icon: "+", title: "Countries Served", },
-]
-
+];
 </script>
+
 
 <template>
   <div class="tp-counter-area tp-counter-space p-relative pb-140">
